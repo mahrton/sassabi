@@ -66,3 +66,17 @@ nav a:hover, nav a:active, nav a:focus {
 	color: #999;
 	text-decoration: none;
 }
+
+footer {
+	background-color: #111;
+  	color: #fff;
+  	min-height: 150px;
+  	padding: 80px 10px;
+}
+
+footer div {
+	font-family: Helvetica;
+	font-size: .9em;
+	font-style: normal;
+	text-align: center;
+}

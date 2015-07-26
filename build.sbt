@@ -29,10 +29,7 @@ libraryDependencies ++= Seq(
   "org.webjars" % "angularjs"            % "1.3.15",
   "org.webjars" % "bootstrap"            % "3.1.1-2",
   "org.webjars" % "angular-ui-bootstrap" % "0.12.1-1",
-  "org.webjars" % "angular-ui-router"    % "0.2.13",
-  "org.webjars" % "marked"               % "0.3.2-1",
-  "org.webjars" % "angular-marked"       % "0.0.12",
-  "org.webjars" % "angularjs-toaster"    % "0.4.8"
+  "org.webjars" % "angular-ui-router"    % "0.2.13"
 )
 
 // run gulp
