@@ -1,0 +1,38 @@
+@(title: String)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@title</title>
+  <link rel="stylesheet" media="screen" href='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.css"))'>
+  <link rel="stylesheet" media="screen" href='@routes.WebJarAssets.at(WebJarAssets.locate("toaster.css"))'>
+  <link rel="stylesheet" media="screen" href='@routes.Assets.at("stylesheets/main.css")'>
+  <link rel="shortcut icon" type="image/png" href='@routes.Assets.at("images/favicon.png")'>
+</head>
+<body id="body" ng-app="app">
+  <header>
+  	<img src='@routes.Assets.at("images/sassabi.png")' />
+  	<h1 class="title">Sassabi</h1>
+  </header>
+  <nav>
+    <a href="/" data-link-title="Nouveautés">Nouveautés</a>
+	<a href="/entretiens/" data-link-title="Entretiens">Entretiens</a>
+	<a href="/voyages/" data-link-title="Voyages">Voyages</a>
+	<a href="/b-d/" data-link-title="B.D.">B.D.</a>
+	<a href="/portfolios/" data-link-title="Portfolios">Portfolios</a>
+  </nav>
+  <!-- toaster -->
+  <toaster-container toaster-options="{'close-button': true}"></toaster-container>
+  <!-- Main content -->
+  <div ui-view></div>
+  <!-- scripts -->
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("angular.min.js"))'></script>
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("angular-animate.min.js"))'></script>
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("angular-ui-router.min.js"))'></script>
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("ui-bootstrap.min.js"))'></script>
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("marked.js"))'></script>
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("angular-marked.min.js"))'></script>
+  <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("toaster.js"))'></script>
+  <script type='text/javascript' src='@routes.Assets.at("javascripts/app.js")'></script>
+  <script type='text/javascript' src='@routes.Assets.at("javascripts/app.tpl.js")'></script>
+</body>
+</html>

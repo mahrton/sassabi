@@ -1,0 +1,68 @@
+/** bootstrap を使用した際に、AngularJS の ng-cloak, ng-hide が有効となるようにするパッチ。 */
+#body [ng-cloak], #body .ng-hide {
+	display: none !important;
+}
+
+@font-face {
+	font-family: aguafinaScript;
+	src: url(../fonts/AguafinaScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../fonts/Alegreya-Regular.otf);
+}
+
+.title {
+	font-weight: normal;
+	font-style: normal;
+	color: #444;
+	font-family: aguafinaScript;
+	font-size: 75px;
+	text-transform: none;
+	text-align: center;
+}
+
+header {
+	background-color: #E7E7E7;
+	padding: 25px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav {
+	text-align: center;
+	padding: 10px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav a {
+	font-family: alegreya;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	padding: 10px 11px;
+	letter-spacing: 2px;
+	display: inline-block;
+}
+
+nav a:link, nav a:visited {
+	transition: color .2s ease-in-out;
+	color: #000;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+	color: #999;
+	text-decoration: none;
+}
